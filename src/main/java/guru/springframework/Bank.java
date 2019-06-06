@@ -2,9 +2,9 @@ package guru.springframework;
 
 import java.util.HashMap;
 
-public class Bank {
+class Bank {
 
-    private HashMap<Pair,Integer> rateMap = new HashMap<>();
+    private final HashMap<Pair,Integer> rateMap = new HashMap<>();
 
     public Money reduce(Expression source, String toCurrency) {
 //       if (source instanceof Money) return  (Money) source;
